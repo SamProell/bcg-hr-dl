@@ -27,5 +27,7 @@ from models import baseline_fcn as architecture
 
 patchsize, n_channels = 400, 1
 model = architecture.create(input_shape=(patchsize, n_channels), enlarge=1)
+
+# with x_data and y_data in the correct shape:
 model.fit(x_data, y_data, batch_size=32)
 ```
